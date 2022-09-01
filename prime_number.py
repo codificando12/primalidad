@@ -1,15 +1,16 @@
 
 
 def prime_number(number):
- 
-    if check_number == 1 or check_number == 2:
-            return "It is prime" 
-    for numbers in range(2, number):
-        if check_number % numbers != 0 and check_number / check_number == 1:
-            return "It is prime"
-        else:
-            return "It is not prime"
-     
+    count = 0    
+    for numbers in range(1, number):
+        hola =  number % numbers
+        if hola == 0:
+            count += 1
+    if count >=2:
+        return "It is not a prime number"
+    else:
+        return "It is a prime number"
+            
 
 print("""
     This program will help you to check
