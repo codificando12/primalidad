@@ -1,7 +1,8 @@
-
-
 def prime_number(number):
-    count = 0    
+    count = 0
+    if number == 1:
+        return "It is a prime number"
+            
     for numbers in range(1, number):
         hola =  number % numbers
         if hola == 0:
