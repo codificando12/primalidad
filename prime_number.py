@@ -4,8 +4,8 @@ def prime_number(number):
         return "It is a prime number"
             
     for numbers in range(1, number):
-        hola =  number % numbers
-        if hola == 0:
+        check =  number % numbers
+        if check == 0:
             count += 1
     if count >=2:
         return "It is not a prime number"
